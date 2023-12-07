@@ -12,7 +12,7 @@ Each time you play this game, he will hide a secret number of cubes of each colo
 To get information, once a bag has been loaded with cubes, the Elf will reach into the bag, grab a handful of random cubes, show them to you, and then put them back in the bag.
 He'll do this a few times per game.
 
---- Part One
+### --- Part One
 
 You play several games and record the information from each game (your puzzle input). Each game is listed with its ID number (like the 11 in Game 11: ...) followed by a semicolon-separated list of
 subsets of cubes that were revealed from the bag (like 3 red, 5 green, 4 blue).
@@ -40,7 +40,7 @@ similarly, game 4 would also have been impossible because the Elf showed you 15 
 
 Determine which games would have been possible if the bag had been loaded with only 12 red cubes, 13 green cubes, and 14 blue cubes. What is the sum of the IDs of those games?
 
---- Part Two ---
+### --- Part Two ---
 
 The Elf says they've stopped producing snow because they aren't getting any water! He isn't sure why the water stopped; however, he can show you how to get to the water source to check it out for yourself. It's just up ahead!
 
