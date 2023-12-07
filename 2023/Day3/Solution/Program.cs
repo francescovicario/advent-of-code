@@ -189,21 +189,15 @@ static List<int> findGears(string[] data)
                         product = currentLine[0];
 
                         if (currentLine.Count > 1)
-                            for(int k = 0; k < currentLine.Count; k++)
-                                if(k > 0)
-                                    product *= currentLine[k];
+                            product *= currentLine[1];
                     }
 
                     if (lastLine.Count > 0)
                     {
                         product = product == 0 ? lastLine[0] : product * lastLine[0];
 
-
                         if (lastLine.Count > 1)
-                            for (int k = 0; k < lastLine.Count; k++)
-                                if (k > 0)
-                                    product *= lastLine[k];
-
+                            product *= lastLine[1];
                     }
 
                     if (nextLine.Count > 0) 
@@ -211,9 +205,7 @@ static List<int> findGears(string[] data)
                         product = product == 0 ? nextLine[0] : product * nextLine[0];
 
                         if (nextLine.Count > 1)
-                            for (int k = 0; k < nextLine.Count; k++)
-                                if (k > 0)
-                                    product *= nextLine[k];
+                            product *= nextLine[1];
                     }
 
                     numbers.Add(product);
@@ -233,4 +225,4 @@ int result2 = 0;
 foreach (int n in findGears(data))
     result2 += n;
 
-Console.WriteLine($"\nRisultato finale parte 2 : {result2}");
+Console.WriteLine($"\nPart Two Result: {result2}");
